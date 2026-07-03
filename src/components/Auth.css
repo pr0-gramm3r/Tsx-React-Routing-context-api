@@ -1,0 +1,169 @@
+.login-wrap {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #1C1B19;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    padding: 24px;
+}
+ 
+.login-card {
+    width: 100%;
+    max-width: 380px;
+    background: #242320;
+    border: 1px solid #35332E;
+    border-radius: 14px;
+    padding: 40px 32px;
+}
+ 
+.login-brand {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 26px;
+    color: #F2F0EA;
+    margin: 0 0 4px;
+    letter-spacing: 0.2px;
+}
+ 
+.login-sub {
+    font-size: 14px;
+    color: #8C897F;
+    margin: 0 0 32px;
+}
+ 
+.field {
+    margin-bottom: 18px;
+}
+ 
+.field label {
+    display: block;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #8C897F;
+    margin-bottom: 8px;
+}
+ 
+.field-input {
+    position: relative;
+}
+ 
+.field input {
+    width: 100%;
+    box-sizing: border-box;
+    background: #1C1B19;
+    border: 1px solid #35332E;
+    border-radius: 8px;
+    padding: 12px 14px;
+    font-size: 15px;
+    color: #F2F0EA;
+    outline: none;
+    transition: border-color 0.15s ease;
+}
+ 
+.field input::placeholder {
+    color: #5B5850;
+}
+ 
+.field input:focus {
+    border-color: #E8A33D;
+}
+ 
+.toggle-pw {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #8C897F;
+    font-size: 12px;
+    cursor: pointer;
+    padding: 4px;
+}
+ 
+.toggle-pw:hover {
+    color: #F2F0EA;
+}
+ 
+.row-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: -4px 0 24px;
+}
+ 
+.remember {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: #8C897F;
+}
+ 
+.remember input {
+    accent-color: #E8A33D;
+}
+ 
+.forgot {
+    font-size: 13px;
+    color: #E8A33D;
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+ 
+.forgot:hover {
+    text-decoration: underline;
+}
+ 
+.error-msg {
+    background: rgba(216, 90, 30, 0.12);
+    border: 1px solid rgba(216, 90, 30, 0.3);
+    color: #F0997B;
+    font-size: 13px;
+    padding: 10px 12px;
+    border-radius: 8px;
+    margin-bottom: 18px;
+}
+ 
+.submit-btn {
+    width: 100%;
+    background: #E8A33D;
+    color: #1C1B19;
+    border: none;
+    border-radius: 8px;
+    padding: 13px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.15s ease;
+}
+ 
+.submit-btn:hover {
+    opacity: 0.9;
+}
+ 
+.submit-btn:disabled {
+    opacity: 0.6;
+    cursor: default;
+}
+ 
+.signup-line {
+    text-align: center;
+    font-size: 13px;
+    color: #8C897F;
+    margin: 24px 0 0;
+}
+ 
+.signup-line a {
+    color: #F2F0EA;
+    text-decoration: none;
+    font-weight: 600;
+}
+ 
+.signup-line a:hover {
+    text-decoration: underline;
+}
