@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import './Auth.css'
+import { Link } from "react-router-dom";
 
 
-const Auth: React.FC = () => {
+const AuthLogin: React.FC = () => {
 
     const [email, setEmail] = useState<string>("");
     const [password, setPassword] = useState<string>("");
@@ -18,9 +19,8 @@ const Auth: React.FC = () => {
             console.log("Logging in with", { email, password });
         }, 900);
     }
-
     return (
-    <div className="guest" >
+    <div className="login-wrap" >
         <form className="login-card" onSubmit={handleSubmit} >
             <h1 className="login-brand">Welcome back!</h1>
             <p className="login-sub">Sign in to continue to your account.</p>
@@ -60,11 +60,11 @@ const Auth: React.FC = () => {
             </button>
     
             <p className="signup-line">
-            Don't have an account? <a href="#">Sign up</a>
+            Don't have an account? <Link to="/authLogin">Sign in</Link>
             </p>
         </form>
     </div>
   )
 }
 
-export default Auth
+export default AuthLogin

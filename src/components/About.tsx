@@ -3,12 +3,107 @@ import type { FC } from "react"
 const About:FC = () => {
   return (
     <div className="about">
-      <h1>
-        This is About
-      </h1>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia, expedita corrupti reiciendis aperiam velit unde accusamus, ab alias nesciunt aspernatur laudantium eos tempora itaque ipsum dolore consectetur porro molestias suscipit, ratione voluptas dolor! Dolorem odio earum perferendis accusamus magni cum hic commodi? Cum assumenda rem pariatur enim, itaque similique culpa optio sunt eveniet natus perspiciatis nostrum aliquid, minima eius delectus reprehenderit amet incidunt veritatis dignissimos voluptate voluptatibus recusandae. Voluptates tenetur iste atque nam deleniti minus perferendis, quod totam cupiditate mollitia labore alias similique quidem sunt dolorum, eius quaerat quos, veniam saepe necessitatibus harum possimus repudiandae. Tempore, ad dolores error inventore praesentium dicta ipsum officia officiis, quis rem ipsam quas, ipsa velit rerum! Eius veniam dolore rerum atque laborum! Explicabo porro tempora ut consequuntur similique quos ullam voluptatum deserunt fuga tenetur itaque, numquam necessitatibus quidem optio mollitia dolor minima? Maiores minus velit sunt commodi quos magnam et vel harum a modi laborum inventore est eligendi deserunt impedit non, nisi reiciendis voluptates odio consequatur sapiente at sint? Assumenda maiores doloribus voluptatibus? Ipsa numquam et facilis molestias. Aperiam quos adipisci nihil magni eius rem quo ex tempora dignissimos eveniet sed eligendi neque amet veritatis enim porro illo, quisquam impedit. Sapiente deserunt, aliquam excepturi repudiandae officia, ipsam eveniet unde quasi vero qui enim fugiat eos libero? Commodi atque doloribus velit dolor quisquam quae, non temporibus repellendus repudiandae asperiores nihil fugiat adipisci ad. Similique dolore officia amet eum eos in, facilis repudiandae! Iure quod accusantium minima ipsa ipsam, aliquid velit totam voluptas, magnam doloribus corrupti sed quisquam. Saepe delectus in, suscipit laboriosam quis doloremque quae consequatur culpa voluptas quisquam? Illum, dolorem? Deserunt obcaecati soluta expedita assumenda dolorem saepe sunt quam tempore nostrum culpa ratione, magni quia aut asperiores dolorum enim nihil? Pariatur a possimus corrupti deserunt ipsa, labore soluta nulla vero, dignissimos fuga porro, numquam sed odio inventore officia excepturi! Molestias, voluptatibus dolorem perspiciatis quasi dolorum, id possimus adipisci tenetur maiores consectetur fugit ab libero qui sequi enim voluptate! Accusantium id tempore laboriosam similique nihil provident sunt, consequatur assumenda asperiores repellat quod quisquam excepturi, magni eos animi, eum exercitationem nulla? Accusamus, fugiat! Iusto culpa recusandae architecto itaque ea nam quisquam ipsa tenetur non, vero, corrupti temporibus magni modi! Consequatur in excepturi nisi facilis dignissimos dolorem debitis enim corporis adipisci, deleniti suscipit ipsum unde veritatis maiores omnis reprehenderit assumenda, ducimus ut! Nihil accusantium quos, eveniet, numquam nulla dolorum vel ipsum nostrum inventore nemo minus voluptatem in dignissimos quam non odit maxime similique quibusdam illum, quasi repellendus fugiat! Illo voluptate accusamus voluptates dolore temporibus in tempora? Debitis libero maxime, alias quia voluptas corporis facilis totam, asperiores aut voluptatum temporibus distinctio hic aperiam iusto officia odit tempora veniam! Nihil fuga, illum laborum repellat minima eum porro non accusantium facilis odit nobis! Vitae itaque fuga, quia doloremque repudiandae sapiente deserunt aspernatur, aliquid voluptas quo facilis. Officia dicta mollitia quam inventore illum quidem quasi fugiat, qui commodi saepe dignissimos aliquid expedita voluptatum, ut suscipit, repellendus obcaecati repudiandae! Reprehenderit tempora eligendi ipsam quod quia nisi accusamus iure dolores placeat qui, tenetur temporibus itaque illum suscipit eius molestiae quisquam magnam porro impedit blanditiis ad iste doloribus similique. Pariatur expedita nihil quo at tenetur veniam sed dicta est debitis asperiores velit, eum corrupti rerum voluptates repudiandae unde doloribus. Facilis aperiam obcaecati tenetur dicta perferendis quisquam quae iste mollitia adipisci quam ipsum deserunt, asperiores illum velit perspiciatis natus repellat a enim earum in necessitatibus nobis delectus et dignissimos. Officia a enim aspernatur ullam excepturi, quam iure debitis tempore possimus voluptates mollitia aliquam voluptatem consequatur veritatis voluptatibus laudantium nisi quos, aperiam ad voluptas modi deleniti maiores? Eius possimus iure tempore quos numquam minus quae molestias, exercitationem doloribus minima incidunt obcaecati saepe cupiditate, dolorum earum asperiores velit nesciunt maxime iusto, error laboriosam ea labore. Rem enim amet dolores voluptas veniam recusandae harum itaque cumque magnam incidunt! Fuga incidunt recusandae eaque ab at repellendus. Maiores illo officia placeat assumenda? Molestias ipsam fugiat distinctio tempore cumque veniam natus illo, officia inventore reprehenderit excepturi, culpa repellendus repudiandae tenetur tempora. Ullam omnis odit voluptatum nostrum reprehenderit repellendus iste in quibusdam odio earum itaque unde est impedit magni aut tenetur maxime, esse temporibus magnam obcaecati voluptas error consequuntur? Delectus totam exercitationem corporis consequatur! Autem architecto corporis quae, maxime maiores assumenda sequi nulla explicabo velit illo, inventore quasi! Corporis beatae doloribus magni porro nihil, quis odit numquam fugit hic quasi reiciendis sunt? Numquam earum officiis voluptate quos. Deserunt accusamus suscipit, placeat quasi beatae illo doloremque dolorem aliquid cum minus nisi nam? Nam placeat perferendis quia quis autem. Veritatis nobis modi harum officiis enim ab, odit architecto quaerat vero velit cum cumque repudiandae autem adipisci iusto et rerum quae ratione similique aut ullam. Harum, dolore in facilis sint necessitatibus nesciunt, nisi obcaecati sit possimus sunt eius alias. Aperiam sed molestias et labore itaque ipsam quis, odit magni? Culpa quam, earum tenetur consequuntur cumque amet eos assumenda sit nesciunt unde sequi enim placeat autem recusandae magni quibusdam vitae asperiores doloremque nulla fuga dolor soluta! Labore, sit. Dolore dolorum omnis laborum sunt consectetur ad est excepturi cupiditate, eveniet, quaerat sint quia at officiis itaque officia voluptates, dolorem perferendis voluptate esse? Asperiores aliquam non consequatur placeat iste architecto labore alias. Et, animi modi distinctio explicabo placeat doloribus corrupti fuga nostrum recusandae deleniti facere labore iusto dignissimos tenetur voluptatibus commodi esse laborum blanditiis iste dolorum quos sit nesciunt repudiandae sapiente. Dicta sed earum laudantium corrupti vel, illo, nobis quibusdam aperiam cum, officiis nisi similique? Aliquam nam harum, fuga at molestiae est nulla quibusdam corrupti eveniet atque autem quae similique repudiandae dolorum culpa maxime necessitatibus, laboriosam blanditiis beatae aperiam, deserunt commodi porro aut labore. Eligendi doloremque nostrum quisquam nobis officiis repellendus praesentium ullam perspiciatis quaerat placeat, dolor quam voluptate explicabo ea obcaecati, deserunt earum facilis impedit consequatur architecto veniam aperiam eos possimus aut. Recusandae incidunt quis pariatur in voluptatibus explicabo magni qui nobis id, accusantium omnis sunt praesentium consequatur, eum adipisci dolor rem error quas, fugit nisi. Amet debitis ipsa, sequi corrupti quo est praesentium dolore tempora deserunt minus consectetur nam ea iusto recusandae quasi accusamus facilis qui obcaecati quod voluptatum eum. Quo facilis consectetur, ducimus veritatis doloribus amet rem dolores harum expedita sunt. Fugiat, accusamus quibusdam id ipsam ut nihil tenetur fugit maiores nisi dignissimos nobis sed atque perferendis!
-      </p>
+      <h1>About</h1>
+      <div className="intro">
+        <div className="left">
+          <div className="userCard">
+            <img src="" alt="" />  
+            <p className="name">Vinit Pratap Singh</p>
+            <p className="post">Founder</p>
+            <p className="desc">Handels a Company, Filled with absolute Creativity. <i className="fas fa-chart-line"></i></p>
+          </div>          
+        </div>
+        <div className="right">
+          <img src="../asset/founder-image.png" alt="MQUV-TECH" />
+        </div>
+      </div>
+      <div className="context">
+        <div className="top">
+          <h2>We are a team of <br />Visionaries, Designers, and Engineers.</h2>
+          <hr />
+        </div>
+        <div className="main">
+          <p>
+            MQUV Tech has always redefs what it means to build technology with purpose. Rooted in a passion for solving real-world problems through code, design, and strategy, the company was built on a simple belief: every business, regardless of size, deserves access to world-class software solutions.At the heart of MQUV Tech lies a vision to bridge the gap between complex technology and practical business needs. What began as a small team of developers with a shared ambition has grown into a full-fledged creative technology and digital transformation agency, serving startups, enterprises, and organizations across multiple industries. The journey has been driven by a relentless focus on quality, innovation, and client success — values that continue to shape every project undertaken.With a strong background in software engineering and a deep understanding of modern digital ecosystems, the leadership at MQUV Tech brings together technical expertise and creative vision. This combination allows the company to move beyond simply writing code — instead, crafting complete digital experiences that are functional, scalable, and visually compelling. From custom software development to mobile applications, websites, and automation systems, every solution is designed with the end user in mind, ensuring that technology serves people, not the other way around.What sets MQUV Tech apart is its commitment to building long-term partnerships rather than one-off projects. Understanding that every client's needs are unique, the approach at MQUV Tech emphasizes collaboration, transparency, and adaptability. Whether working with an early-stage startup looking to bring an idea to life or an established enterprise seeking to modernize its operations through automation, the goal remains the same: delivering solutions that create measurable impact.The philosophy driving MQUV Tech is centered on three core principles — innovation, precision, and reliability. Innovation ensures that the solutions built today are ready for the challenges of tomorrow. Precision reflects a meticulous attention to detail in both design and development, ensuring every product is polished and production-ready. Reliability speaks to the trust clients place in MQUV Tech, knowing that deadlines will be met and quality will never be compromised.Beyond technical skills, there is a genuine passion for mentorship and team growth. Building a company isn't just about delivering projects — it's about cultivating a culture where visionaries, designers, and engineers can thrive together. This collaborative spirit has become a defining trait of MQUV Tech's internal culture, fostering creativity and pushing the boundaries of what's possible in software development.Looking ahead, the mission is clear: to continue expanding MQUV Tech's reach, helping more businesses harness the power of technology to achieve their goals. With a foundation built on trust, expertise, and a genuine desire to create meaningful digital solutions, MQUV Tech is positioned not just as a service provider, but as a long-term technology partner for organizations navigating the ever-evolving digital landscape.
+          </p>
+        </div>
+      </div>
+      <div className="pallates">
+        <h3>Meet Our Experts</h3>
+        <div className="userCards">
+
+        </div>
+      </div>
+      <div className="musical">
+        <div className="Frontend">
+          <h2>FRONTEND</h2>
+          <div className="structure">
+            <img src="../asset/frontend.png" alt="FRONTEND" />
+          </div>
+          <div className="desc">
+            <h3>Frontend architecture</h3>
+            <p>"Illustrates how the browser handles UI components, state management, rendering, and styling — all coordinated through build tooling and connected to the backend via network requests."</p>
+          </div>
+        </div>
+        <div className="Backend">
+          <h1>BACKEND</h1>
+          <div className="structure">
+            <img src="../asset/backend.png" alt="BACKEND" />
+          </div>
+          <div className="desc">
+            <h3>Backend Architecture</h3>
+            <p>"Shows how the server processes requests through the API layer, authentication middleware, and business logic, accessing data via the data layer — bridging the client and database."</p>
+          </div>
+        </div>
+      </div>
+      <div className="workings">
+        <div className="Web-Apps">
+          <div className="workingCard">
+            <img src="" alt="" />
+            <p className="name"></p>
+            <p className="founderName"></p>
+            <p className="details"></p>
+            <button>Visit now <i className="fas fa-arrow-right"></i></button>
+          </div>
+          <div className="workingCard">
+            <img src="" alt="" />
+            <p className="name"></p>
+            <p className="founderName"></p>
+            <p className="details"></p>
+            <button>Visit now <i className="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+        <div className="websites">
+          <div className="workingCard">
+            <img src="" alt="" />
+            <p className="name"></p>
+            <p className="founderName"></p>
+            <p className="details"></p>
+            <button>Visit now <i className="fas fa-arrow-right"></i></button>
+          </div>
+
+        </div>
+        <div className="Mobile-Apps">
+          <div className="workingCard">
+            <img src="" alt="" />
+            <p className="name"></p>
+            <p className="founderName"></p>
+            <p className="details"></p>
+            <button>Visit now <i className="fas fa-arrow-right"></i></button>
+          </div>
+          <div className="workingCard">
+            <img src="" alt="" />
+            <p className="name"></p>
+            <p className="founderName"></p>
+            <p className="details"></p>
+            <button>Visit now <i className="fas fa-arrow-right"></i></button>
+          </div>
+
+        </div>
+      </div>
+      <div className="thankYou-Note">
+        <p>We appreciate you taking the time to explore what we do. Whether you're here to learn more about our services, discuss a project, or simply say hello, we're glad you stopped by. Our team is committed to building thoughtful, reliable software solutions that help businesses grow and adapt in an ever-changing digital world. We look forward to the opportunity to work together and turn your ideas into impactful, real-world results. Reach out anytime — we're always happy to talk.</p>
+      </div>
     </div>
   )
 }
