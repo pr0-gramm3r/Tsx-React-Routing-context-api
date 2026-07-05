@@ -23,7 +23,7 @@ nav a{
 }
 
 nav h1{
-  min-width: fit-content;
+  min-width: 210px;
   background: linear-gradient(270deg,var(--color-success), var(--color-info));
   text-shadow: var(--color-success);
   padding-bottom: var(--space-xs) ;
@@ -291,8 +291,8 @@ nav a:active{
 
 .card .btn{
     display: flex;
+    justify-content: space-between;
     align-items: center;
-
 }
 
 .card .btn button{

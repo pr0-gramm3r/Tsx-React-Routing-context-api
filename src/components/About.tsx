@@ -1,4 +1,9 @@
 import type { FC } from "react"
+import frontEnd from "../asset/frontend.png"
+import backEnd from "../asset/backend.png"
+import founderLogo from "../asset/founder-logo.png"
+import MquvTech from "../asset/founder-image.png"
+import './About.css'
 
 const About:FC = () => {
   return (
@@ -7,14 +12,14 @@ const About:FC = () => {
       <div className="intro">
         <div className="left">
           <div className="userCard">
-            <img src="" alt="" />  
+            <img src={founderLogo} alt="Vinit Sir" />  
             <p className="name">Vinit Pratap Singh</p>
             <p className="post">Founder</p>
             <p className="desc">Handels a Company, Filled with absolute Creativity. <i className="fas fa-chart-line"></i></p>
           </div>          
         </div>
         <div className="right">
-          <img src="../asset/founder-image.png" alt="MQUV-TECH" />
+          <img src={MquvTech} alt="MQUV-TECH" />
         </div>
       </div>
       <div className="context">
@@ -38,7 +43,7 @@ const About:FC = () => {
         <div className="Frontend">
           <h2>FRONTEND</h2>
           <div className="structure">
-            <img src="../asset/frontend.png" alt="FRONTEND" />
+            <img src={frontEnd} alt="FRONTEND" />
           </div>
           <div className="desc">
             <h3>Frontend architecture</h3>
@@ -48,7 +53,7 @@ const About:FC = () => {
         <div className="Backend">
           <h1>BACKEND</h1>
           <div className="structure">
-            <img src="../asset/backend.png" alt="BACKEND" />
+            <img src={backEnd} alt="BACKEND" />
           </div>
           <div className="desc">
             <h3>Backend Architecture</h3>
@@ -59,14 +64,14 @@ const About:FC = () => {
       <div className="workings">
         <div className="Web-Apps">
           <div className="workingCard">
-            <img src="" alt="" />
+            <img src="" alt="Comming Soon" />
             <p className="name"></p>
             <p className="founderName"></p>
             <p className="details"></p>
             <button>Visit now <i className="fas fa-arrow-right"></i></button>
           </div>
           <div className="workingCard">
-            <img src="" alt="" />
+            <img src="" alt="Comming Soon" />
             <p className="name"></p>
             <p className="founderName"></p>
             <p className="details"></p>
@@ -75,7 +80,7 @@ const About:FC = () => {
         </div>
         <div className="websites">
           <div className="workingCard">
-            <img src="" alt="" />
+            <img src="" alt="Comming Soon" />
             <p className="name"></p>
             <p className="founderName"></p>
             <p className="details"></p>
@@ -85,14 +90,14 @@ const About:FC = () => {
         </div>
         <div className="Mobile-Apps">
           <div className="workingCard">
-            <img src="" alt="" />
+            <img src="" alt="Comming Soon" />
             <p className="name"></p>
             <p className="founderName"></p>
             <p className="details"></p>
             <button>Visit now <i className="fas fa-arrow-right"></i></button>
           </div>
           <div className="workingCard">
-            <img src="" alt="" />
+            <img src="" alt="Comming Soon" />
             <p className="name"></p>
             <p className="founderName"></p>
             <p className="details"></p>

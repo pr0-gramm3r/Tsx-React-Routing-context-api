@@ -3,7 +3,7 @@ import Theme from "./Theme"
 import Notify from "./Notify"
 import Card from "./Card"
 import Cart from "./Cart";
-import Login from "./LoginBtn";
+import Login from "./AuthBtn";
 
 interface Prod{
   id: number;
@@ -48,16 +48,6 @@ const products:Prod[] = [
     past: 1499,
     discount: "77% off",
   },
-  {
-    id: 4,
-    img: "https://www.bbassets.com/media/uploads/p/l/40119524_1-amul-happy-treats-french-fries.jpg",
-    name: "Amul Happy Treats French Fries, 250 g",
-    rating: 3.9,
-    reviews: "2.8k",
-    current: 79,
-    past: 299,
-    discount: "73% off",
-  },
 ];
 
 const Dashboard:FC = () => {
@@ -76,7 +66,7 @@ const Dashboard:FC = () => {
       </div>
       <div className="main ">
         {products.map(product =>{
-          return <Card product={product} />
+          return <Card key ={product.id} product={product} />
         })}
       </div>
     </div>

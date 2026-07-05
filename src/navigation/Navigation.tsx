@@ -6,6 +6,8 @@ import About      from "../components/About"
 import AuthLogin  from "../components/AuthLogin"
 import  { type FC } from "react"
 import "../App.css"
+import AuthSignup from "../components/AuthSignup"
+import ProtectedRoute from "../routes/ProtectedRoute"
 
 const App :FC = () => {
 
@@ -29,12 +31,18 @@ const App :FC = () => {
 
       {/* Routes */}
       <Routes>
-        <Route path="/" element={<Dashboard />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/activity" element={<Activity />} />
+
         <Route path="/authLogin" element={<AuthLogin />} />
         <Route path="/authSignup" element={<AuthSignup />} />
+        
+        {/* Protected Routes */}
+        <Route element={<ProtectedRoute />} >
+
+          <Route path="/" element={<Dashboard />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/activity" element={<Activity />} />
+        </Route>
       </Routes>
     </div>
   )

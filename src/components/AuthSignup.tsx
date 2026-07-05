@@ -1,31 +1,57 @@
 import React, { useState } from "react";
 import './Auth.css'
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { registerUser } from "./utils/auth";
 
 
-const AuthLogin: React.FC = () => {
+const AuthSignup: React.FC = () => {
 
+    const [name, setName] = useState<string>("");
     const [email, setEmail] = useState<string>("");
     const [password, setPassword] = useState<string>("");
+    const navigate = useNavigate();
     const [submitting, setSubmitting] = useState<boolean>(false);
  
     function handleSubmit(e: React.FormEvent<HTMLFormElement>): void {
         e.preventDefault();
     
         setSubmitting(true);
-        // Replace this with your real auth call
+        
         setTimeout(() => {
             setSubmitting(false);
-            console.log("Logging in with", { email, password });
+            const check = registerUser({name, email, password});
+                if(!check){
+                    console.error("error Submiting your data");
+                    return;
+                }
+                console.log("Registering in with", { email, password });
+            
+            navigate("/authLogin");
         }, 900);
     }
     return (
     <div className="login-wrap" >
         <form className="login-card" onSubmit={handleSubmit} >
-            <h1 className="login-brand">Welcome back!</h1>
-            <p className="login-sub">Sign in to continue to your account.</p>
+            <h1 className="login-brand">Register</h1>
+            <p className="login-sub">Ready to dive in to the future.</p>
     
     
+            <div className="field">
+                <label htmlFor="name">Name</label>
+                <div className="field-input">
+                    
+                    <input
+                    id="name"
+                    type="text"
+                    placeholder="XYZ"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                    autoComplete="name"
+                    />
+
+                </div>
+            </div>
+
             <div className="field">
                 <label htmlFor="email">Email</label>
                 <div className="field-input">
@@ -56,15 +82,15 @@ const AuthLogin: React.FC = () => {
             </div>
     
             <button className="submit-btn" type="submit" disabled={submitting}>
-                {submitting ? "Signing in..." : "Sign in"}
+                {submitting ? "Signing up..." : "Sign up"}
             </button>
     
             <p className="signup-line">
-            Don't have an account? <Link to="/authLogin">Sign in</Link>
+                <p> Don't have an account? </p><Link to="/authLogin"><i className="fas fa-sign-in-alt"></i> SingIn</Link>
             </p>
         </form>
     </div>
   )
 }
 
-export default AuthLogin
+export default AuthSignup

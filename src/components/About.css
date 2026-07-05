@@ -1,0 +1,426 @@
+/* ==========================================================================
+   About.css — MQUV Tech "About" page
+   Design concept: the page as an engineering drawing sheet.
+   Hairline rules, corner registration marks, mono sheet-index labels.
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+:root {
+  --paper: #faf9f6;
+  --paper-raised: #ffffff;
+  --ink: #14181b;
+  --slate: #5c6670;
+  --slate-soft: #8a929a;
+  --line: #d8dcdf;
+  --line-strong: #b7bec4;
+  --blueprint: #2b5f8a;
+  --blueprint-deep: #1f4666;
+  --blueprint-tint: #eaf1f6;
+  --amber: #c8792f;
+
+  --font-display: 'Space Grotesk', 'Helvetica Neue', sans-serif;
+  --font-body: 'IBM Plex Sans', -apple-system, sans-serif;
+  --font-mono: 'IBM Plex Mono', 'Courier New', monospace;
+
+  --gutter: clamp(20px, 5vw, 64px);
+  --radius: 3px;
+}
+
+/* ---------------------------------- base --------------------------------- */
+
+.about {
+  position: relative;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  font-size: 16px;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 var(--gutter) 0;
+  border-left: 1px solid var(--line);
+  border-right: 1px solid var(--line);
+}
+
+.about *,
+.about *::before,
+.about *::after {
+  box-sizing: border-box;
+}
+
+.about h1,
+.about h2,
+.about h3 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  color: var(--color-text);
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+.about p {
+  margin: 0;
+  color: var(--color-text-muted);
+}
+
+.about img {
+  display: block;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.about a,
+.about button {
+  font-family: var(--font-body);
+}
+
+/* corner registration marks — the page's signature device.
+   Applied to any section wrapped for the "drawing sheet" treatment. */
+.about > div {
+  position: relative;
+}
+
+.intro,
+.context,
+.pallates,
+.musical,
+.workings,
+.thankYou-Note {
+  position: relative;
+  border-top: 1px solid var(--line);
+  padding: 56px 0;
+}
+
+.intro::before,
+.context::before,
+.pallates::before,
+.musical::before,
+.workings::before,
+.thankYou-Note::before {
+  content: '+';
+  position: absolute;
+  top: -8px;
+  left: -6px;
+  font-family: var(--font-mono);
+  font-size: 14px;
+  color: var(--color-border-strong);
+  line-height: 1;
+}
+
+/* sheet index — mono eyebrow labels, numbered like drawing sheets */
+.intro::after,
+.context::after,
+.pallates::after,
+.musical::after,
+.workings::after,
+.thankYou-Note::after {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  color: var(--color-info);
+  display: block;
+  margin-bottom: 32px;
+}
+
+.intro::after      { content: 'SHEET 01 — FOUNDER'; }
+.context::after     { content: 'SHEET 02 — PHILOSOPHY'; }
+.pallates::after    { content: 'SHEET 03 — TEAM'; }
+.musical::after     { content: 'SHEET 04 — ARCHITECTURE'; }
+.workings::after    { content: 'SHEET 05 — SELECTED WORK'; }
+.thankYou-Note::after { content: 'SHEET 06 — CONTACT'; }
+
+/* ------------------------------- page title ------------------------------ */
+
+.about > h1 {
+  font-size: clamp(2.4rem, 6vw, 3.6rem);
+  padding: 72px 0 8px;
+  position: relative;
+}
+
+.about > h1::after {
+  content: 'MQUV TECH / COMPANY PROFILE';
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  color: var(--slate-soft);
+  margin-top: 12px;
+}
+
+/* --------------------------------- intro --------------------------------- */
+
+.intro {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: var(--space-xl);
+  align-items: center;
+}
+
+.intro .left {
+  display: flex;
+}
+
+.userCard {
+  background: var(--paper-raised);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 28px;
+  width: 100%;
+}
+
+.userCard img {
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  background: var(--blueprint-tint);
+  border: 1px solid var(--line);
+  margin-bottom: 18px;
+  object-fit: cover;
+}
+
+.userCard .name {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.15rem;
+  color: var(--ink);
+  margin-bottom: 2px;
+}
+
+.userCard .post {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--blueprint);
+  margin-bottom: 16px;
+}
+
+.userCard .desc {
+  font-size: 0.92rem;
+  color: var(--color-text-secondary);
+}
+
+.userCard .desc .fa-chart-line {
+  color: var(--amber);
+  margin-left: 4px;
+}
+
+.intro .right img {
+  position: absolute;
+    width: 300px;
+    right: 30px;
+
+  border-radius: var(--radius-l);
+  border: 1px solid var(--line);
+}
+
+/* -------------------------------- context -------------------------------- */
+
+.context .top h2 {
+  font-size: clamp(1.6rem, 3.4vw, 2.3rem);
+  line-height: 1.25;
+  max-width: 18ch;
+}
+
+.context .top hr {
+  border: none;
+  border-top: 1px solid var(--line-strong);
+  margin: 24px 0 32px;
+  width: 64px;
+}
+
+.context .main p {
+  max-width: 68ch;
+  font-size: 1rem;
+  color: var(--slate);
+}
+
+/* -------------------------------- pallates -------------------------------- */
+
+.pallates h3 {
+  font-size: 1.4rem;
+  margin-bottom: 24px;
+}
+
+.userCards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  min-height: 80px;
+}
+
+.userCards:empty::before {
+  content: 'Team profiles coming soon.';
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--slate-soft);
+  grid-column: 1 / -1;
+  border: 1px dashed var(--line);
+  border-radius: var(--radius);
+  padding: 24px;
+  text-align: center;
+}
+
+/* --------------------------------- musical -------------------------------- */
+/* Frontend / Backend architecture cards */
+
+.musical {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.Frontend,
+.Backend {
+  background: var(--paper-raised);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+.Frontend h2,
+.Backend h1 {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  color: var(--blueprint);
+  margin-bottom: 20px;
+}
+
+.musical .structure {
+  background: var(--blueprint-tint);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 16px;
+  margin-bottom: 20px;
+  min-height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.musical .structure img {
+  width: 100%;
+}
+
+.musical .desc h3 {
+  font-size: 1.05rem;
+  margin-bottom: 8px;
+}
+
+.musical .desc p {
+  font-size: 0.92rem;
+  font-style: italic;
+  color: var(--slate);
+}
+
+/* -------------------------------- workings -------------------------------- */
+
+.workings {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.Web-Apps,
+.websites,
+.Mobile-Apps {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.workingCard {
+  background: var(--paper-raised);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+
+.workingCard:hover {
+  border-color: var(--blueprint);
+  transform: translateY(-2px);
+}
+
+.workingCard img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  border-radius: var(--radius);
+  background: var(--blueprint-tint);
+  border: 1px solid var(--line);
+  object-fit: cover;
+  margin-bottom: 16px;
+}
+
+.workingCard .name {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--ink);
+}
+
+.workingCard .founderName {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--slate-soft);
+  margin: 4px 0 10px;
+}
+
+.workingCard .details {
+  font-size: 0.88rem;
+  color: var(--slate);
+  margin-bottom: 18px;
+  flex-grow: 1;
+}
+
+.workingCard button {
+  align-self: flex-start;
+  background: none;
+  border: 1px solid var(--ink);
+  color: var(--ink);
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 10px 16px;
+  border-radius: var(--radius);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.workingCard button:hover {
+  background: var(--blueprint);
+  border-color: var(--blueprint);
+  color: #fff;
+}
+
+.workingCard button:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--blueprint);
+  outline-offset: 2px;
+}
+
+/* ------------------------------ thank you note ----------------------------- */
+
+.thankYou-Note {
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 72px;
+}
+
+.thankYou-Note p {
+  max-width: 62ch;
+  font-size: 1.05rem;
+  color: var(--color-text-muted);
+  font-family: var(--font-display);
+  font-weight: 500;
+  line-height: 1.5;
+}

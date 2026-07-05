@@ -153,10 +153,13 @@
 }
  
 .signup-line {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     font-size: 13px;
+    gap: 20px;
     color: #8C897F;
-    margin: 24px 0 0;
+    margin: 24px 30px 0;
 }
  
 .signup-line a {

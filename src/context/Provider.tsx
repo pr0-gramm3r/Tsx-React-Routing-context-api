@@ -39,7 +39,6 @@ const Provider = ({ children }: ThemeProviderProps) => {
         <ThemeContext.Provider value={{ theme, setTheme }}>
         <NotifyContext.Provider value={{ msg_no, setMsg_no }}>
         <CartContext.Provider value={{ cart_no, setCart_no }}>
-        
             {children}
         </CartContext.Provider>
         </NotifyContext.Provider>

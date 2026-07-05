@@ -1,22 +1,33 @@
 import React, { useState } from "react";
 import './Auth.css'
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { loginUser } from "./utils/auth";
 
 
 const AuthLogin: React.FC = () => {
 
+    const navigate = useNavigate();
     const [email, setEmail] = useState<string>("");
     const [password, setPassword] = useState<string>("");
+    const [error, setError] = useState<string>("");
     const [submitting, setSubmitting] = useState<boolean>(false);
  
     function handleSubmit(e: React.FormEvent<HTMLFormElement>): void {
         e.preventDefault();
-    
+        setError("");
         setSubmitting(true);
-        // Replace this with your real auth call
+
         setTimeout(() => {
+            const result = loginUser({ email, password });
             setSubmitting(false);
-            console.log("Logging in with", { email, password });
+
+            if (!result.ok) {
+                setError(result.message || "Something went wrong!!");
+                console.error(result.message);
+                return;
+            }
+
+            navigate("/");
         }, 900);
     }
     return (
@@ -25,6 +36,7 @@ const AuthLogin: React.FC = () => {
             <h1 className="login-brand">Welcome back!</h1>
             <p className="login-sub">Sign in to continue to your account.</p>
     
+            {error && <p className="error-text">{error}</p>}
     
             <div className="field">
                 <label htmlFor="email">Email</label>
@@ -59,9 +71,10 @@ const AuthLogin: React.FC = () => {
                 {submitting ? "Signing in..." : "Sign in"}
             </button>
     
-            <p className="signup-line">
-            Don't have an account? <Link to="/authSignup">Sign up</Link>
-            </p>
+            <div className="signup-line">
+                <span>Don't have an account?</span>
+                <Link to="/authSignup"><i className="fas fa-user-plus"></i> Sign up</Link>
+            </div>
         </form>
     </div>
   )
