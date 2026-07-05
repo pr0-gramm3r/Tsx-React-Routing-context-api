@@ -22,6 +22,12 @@ nav a{
   font-size: var(--font-size-l);
 }
 
+nav 
+
+nav a:active{
+  color: var(--color-success)
+}
+
 nav h1{
   min-width: 210px;
   background: linear-gradient(270deg,var(--color-success), var(--color-info));
@@ -36,9 +42,6 @@ nav h1{
     -webkit-text-fill-color: transparent;
 }
 
-nav a:active{
-  color: var(--color-success)
-}
 
 .dashboard{
     display: flex;

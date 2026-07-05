@@ -50,13 +50,6 @@ const About:FC = () => {
                 <p className="details">Creative developer bridging the gap between sophisticated design and robust full-stack logic.</p>
                 <button>Visit now <i className="fas fa-arrow-right"></i></button>
               </div>
-              <div className="workingCard">
-                <img src="https://www.freeiconspng.com/thumbs/computer-user-icon/computer-user-icon-28.png" alt="Comming Soon" />
-                <p className="name">Deepak Bareth</p>
-                <p className="founderName">Junior Engineer</p>
-                <p className="details">Front-end enthusiast dedicated to crafting clean code and intuitive user interfaces.</p>
-                <button>Visit now <i className="fas fa-arrow-right"></i></button>
-              </div>
 
               <div className="workingCard">
                 <img src="https://www.freeiconspng.com/thumbs/computer-user-icon/computer-user-icon-28.png" alt="Comming Soon" />
