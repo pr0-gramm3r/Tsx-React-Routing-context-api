@@ -36,13 +36,60 @@ const About:FC = () => {
       <div className="pallates">
         <h3>Meet Our Experts</h3>
         <div className="userCards">
+              <div className="workingCard">
+                <img src="https://www.freeiconspng.com/thumbs/computer-user-icon/computer-user-icon-28.png" alt="Comming Soon" />
+                <p className="name">Bhaarat Ranjan</p>
+                <p className="founderName">Senior Engineer</p>
+                <p className="details">Lead architect focused on building scalable, high-performance systems and innovative tech solutions.</p>
+                <button>Visit now <i className="fas fa-arrow-right"></i></button>
+              </div>
+              <div className="workingCard">
+                <img src="https://www.freeiconspng.com/thumbs/computer-user-icon/computer-user-icon-28.png" alt="Comming Soon" />
+                <p className="name">Isha Rani Sahu</p>
+                <p className="founderName">Full-stack Engineer</p>
+                <p className="details">Creative developer bridging the gap between sophisticated design and robust full-stack logic.</p>
+                <button>Visit now <i className="fas fa-arrow-right"></i></button>
+              </div>
+              <div className="workingCard">
+                <img src="https://www.freeiconspng.com/thumbs/computer-user-icon/computer-user-icon-28.png" alt="Comming Soon" />
+                <p className="name">Deepak Bareth</p>
+                <p className="founderName">Junior Engineer</p>
+                <p className="details">Front-end enthusiast dedicated to crafting clean code and intuitive user interfaces.</p>
+                <button>Visit now <i className="fas fa-arrow-right"></i></button>
+              </div>
+
+              <div className="workingCard">
+                <img src="https://www.freeiconspng.com/thumbs/computer-user-icon/computer-user-icon-28.png" alt="Comming Soon" />
+                <p className="name">Dharmesh Kumar</p>
+                <p className="founderName">Junior Engineer</p>
+                <p className="details">Logic-driven developer focused on component architecture and building seamless web experiences.</p>
+                <button>Visit now <i className="fas fa-arrow-right"></i></button>
+              </div>
+              <div className="workingCard">
+                <img src="https://www.freeiconspng.com/thumbs/computer-user-icon/computer-user-icon-28.png" alt="Comming Soon" />
+                <p className="name">Divyanshu Pathak</p>
+                <p className="founderName">Intern</p>
+                <p className="details">professionalises in Frontend Development, with Better User Interface handeling.</p>
+                <button>Visit now <i className="fas fa-arrow-right"></i></button>
+              </div>
+
+              <div className="workingCard">
+                <img src="https://www.freeiconspng.com/thumbs/computer-user-icon/computer-user-icon-28.png" alt="Comming Soon" />
+                <p className="name">Kumar Ayush</p>
+                <p className="founderName">Intern</p>
+                <p className="details">professionalises in Backend Development, Believes in Scalable Architecture.</p>
+                <button>Visit now <i className="fas fa-arrow-right"></i></button>
+              </div>
 
         </div>
       </div>
       <div className="musical">
+        <div className="bg">
+          <img src="https://img.magnific.com/premium-photo/digital-technology-background-with-connecting-nodes-plexus-lines-clean-white-backdrop-symbolizing-big-data-futuristic-networks_1354780-5512.jpg?w=1060" alt="Musical bg" />
+        </div>
         <div className="Frontend">
           <h2>FRONTEND</h2>
-          <div className="structure">
+          <div className="structureFront">
             <img src={frontEnd} alt="FRONTEND" />
           </div>
           <div className="desc">
@@ -52,58 +99,13 @@ const About:FC = () => {
         </div>
         <div className="Backend">
           <h1>BACKEND</h1>
-          <div className="structure">
+          <div className="structureBack">
             <img src={backEnd} alt="BACKEND" />
           </div>
           <div className="desc">
             <h3>Backend Architecture</h3>
             <p>"Shows how the server processes requests through the API layer, authentication middleware, and business logic, accessing data via the data layer — bridging the client and database."</p>
           </div>
-        </div>
-      </div>
-      <div className="workings">
-        <div className="Web-Apps">
-          <div className="workingCard">
-            <img src="" alt="Comming Soon" />
-            <p className="name"></p>
-            <p className="founderName"></p>
-            <p className="details"></p>
-            <button>Visit now <i className="fas fa-arrow-right"></i></button>
-          </div>
-          <div className="workingCard">
-            <img src="" alt="Comming Soon" />
-            <p className="name"></p>
-            <p className="founderName"></p>
-            <p className="details"></p>
-            <button>Visit now <i className="fas fa-arrow-right"></i></button>
-          </div>
-        </div>
-        <div className="websites">
-          <div className="workingCard">
-            <img src="" alt="Comming Soon" />
-            <p className="name"></p>
-            <p className="founderName"></p>
-            <p className="details"></p>
-            <button>Visit now <i className="fas fa-arrow-right"></i></button>
-          </div>
-
-        </div>
-        <div className="Mobile-Apps">
-          <div className="workingCard">
-            <img src="" alt="Comming Soon" />
-            <p className="name"></p>
-            <p className="founderName"></p>
-            <p className="details"></p>
-            <button>Visit now <i className="fas fa-arrow-right"></i></button>
-          </div>
-          <div className="workingCard">
-            <img src="" alt="Comming Soon" />
-            <p className="name"></p>
-            <p className="founderName"></p>
-            <p className="details"></p>
-            <button>Visit now <i className="fas fa-arrow-right"></i></button>
-          </div>
-
         </div>
       </div>
       <div className="thankYou-Note">

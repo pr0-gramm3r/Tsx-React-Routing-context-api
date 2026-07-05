@@ -123,12 +123,6 @@
   margin-bottom: 32px;
 }
 
-.intro::after      { content: 'SHEET 01 — FOUNDER'; }
-.context::after     { content: 'SHEET 02 — PHILOSOPHY'; }
-.pallates::after    { content: 'SHEET 03 — TEAM'; }
-.musical::after     { content: 'SHEET 04 — ARCHITECTURE'; }
-.workings::after    { content: 'SHEET 05 — SELECTED WORK'; }
-.thankYou-Note::after { content: 'SHEET 06 — CONTACT'; }
 
 /* ------------------------------- page title ------------------------------ */
 
@@ -165,9 +159,15 @@
 .userCard {
   background: var(--paper-raised);
   border: 1px solid var(--line);
-  border-radius: var(--radius);
+  border-radius: var(--radius-l);
+  box-shadow: var(--shadow-m);
   padding: 28px;
+  cursor: pointer;
   width: 100%;
+}
+
+.userCard:active{
+  box-shadow: none;
 }
 
 .userCard img {
@@ -245,9 +245,10 @@
 }
 
 .userCards {
-  display: grid;
+  display: flex;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 20px;
+  flex-wrap: wrap;
   min-height: 80px;
 }
 
@@ -263,61 +264,6 @@
   text-align: center;
 }
 
-/* --------------------------------- musical -------------------------------- */
-/* Frontend / Backend architecture cards */
-
-.musical {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-}
-
-.Frontend,
-.Backend {
-  background: var(--paper-raised);
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  padding: 32px;
-  display: flex;
-  flex-direction: column;
-}
-
-.Frontend h2,
-.Backend h1 {
-  font-family: var(--font-mono);
-  font-size: 12px;
-  font-weight: 500;
-  letter-spacing: 0.16em;
-  color: var(--blueprint);
-  margin-bottom: 20px;
-}
-
-.musical .structure {
-  background: var(--blueprint-tint);
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  padding: 16px;
-  margin-bottom: 20px;
-  min-height: 160px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.musical .structure img {
-  width: 100%;
-}
-
-.musical .desc h3 {
-  font-size: 1.05rem;
-  margin-bottom: 8px;
-}
-
-.musical .desc p {
-  font-size: 0.92rem;
-  font-style: italic;
-  color: var(--slate);
-}
 
 /* -------------------------------- workings -------------------------------- */
 
@@ -331,7 +277,6 @@
 .websites,
 .Mobile-Apps {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: 24px;
 }
 
@@ -339,6 +284,7 @@
   background: var(--paper-raised);
   border: 1px solid var(--line);
   border-radius: var(--radius);
+  width: 300px;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -352,7 +298,6 @@
 
 .workingCard img {
   width: 100%;
-  aspect-ratio: 16 / 10;
   border-radius: var(--radius);
   background: var(--blueprint-tint);
   border: 1px solid var(--line);
@@ -408,6 +353,99 @@ a:focus-visible {
   outline: 2px solid var(--blueprint);
   outline-offset: 2px;
 }
+
+
+/* --------------------------------- musical -------------------------------- */
+/* Frontend / Backend architecture cards */
+
+.musical {
+  display: grid;
+  position: relative;
+  grid-template-columns: 1fr 1fr;
+  /* gap: 40px; */
+}
+
+.musical .bg{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.musical .bg img{
+  width: 100%;
+  height: 100%;
+  
+}
+
+.Frontend,
+.Backend {
+  background: transparent;
+  /* border: 1px solid var(--line); */
+  border-radius: var(--radius);
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+.Frontend h2,
+.Backend h1 {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  color: var(--blueprint);
+  margin-bottom: 20px;
+}
+
+.musical .structureFront,
+.musical .structureBack {
+  background: var(--blueprint-tint);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 16px;
+  margin-bottom: 20px;
+  min-height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.musical .structureFront img,
+.musical .structureBack img {
+  width: 100%;
+  cursor: -webkit-zoom-in;
+}
+
+.musical .structureFront:active{
+  margin-left: 2rem;
+  scale: 2.5;
+  
+}
+
+.musical .structureBack:active{
+  scale: 2.5;
+  margin-right: 2rem;
+}
+
+.musical .desc h3 {
+  font-size: 1.05rem;
+  margin-bottom: 8px;
+}
+
+.musical .desc p {
+  font-size: 0.92rem;
+  font-style: italic;
+  color: var(--color-text);
+  padding: var(--space-xs);
+  border-radius: var(--radius-m);
+  background-color: rgba(255, 255, 255, 0.500);
+}
+
 
 /* ------------------------------ thank you note ----------------------------- */
 
