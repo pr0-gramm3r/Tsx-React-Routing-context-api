@@ -255,6 +255,7 @@
   display: flex;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 20px;
+  width: 300px;
   flex-wrap: wrap;
   min-height: 80px;
 }
@@ -270,6 +271,37 @@
   padding: 24px;
   text-align: center;
 }
+
+
+.userCard button {
+  align-self: flex-start;
+  background: none;
+  border: 1px solid var(--ink);
+  color: var(--ink);
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 10px 16px;
+  border-radius: var(--radius);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.userCard button:hover {
+  background: var(--blueprint);
+  border-color: var(--blueprint);
+  color: #fff;
+}
+
+.userCard button:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--blueprint);
+  outline-offset: 2px;
+}
+
+
 
 
 /* -------------------------------- workings -------------------------------- */
@@ -291,7 +323,6 @@
   background: var(--paper-raised);
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  width: 300px;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -332,35 +363,6 @@
   margin-bottom: 18px;
   flex-grow: 1;
 }
-
-.workingCard button {
-  align-self: flex-start;
-  background: none;
-  border: 1px solid var(--ink);
-  color: var(--ink);
-  font-size: 0.85rem;
-  font-weight: 500;
-  padding: 10px 16px;
-  border-radius: var(--radius);
-  cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
-}
-
-.workingCard button:hover {
-  background: var(--blueprint);
-  border-color: var(--blueprint);
-  color: #fff;
-}
-
-.workingCard button:focus-visible,
-a:focus-visible {
-  outline: 2px solid var(--blueprint);
-  outline-offset: 2px;
-}
-
 
 /* --------------------------------- musical -------------------------------- */
 /* Frontend / Backend architecture cards */

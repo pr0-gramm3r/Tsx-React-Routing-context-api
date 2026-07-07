@@ -3,20 +3,80 @@ import frontEnd from "../asset/frontend.png"
 import backEnd from "../asset/backend.png"
 import founderLogo from "../asset/founder-logo.png"
 import MquvTech from "../asset/founder-image.png"
+import WorkingCard from "./cards/WorkingCard"
+import FounderCard from "./cards/FounderCard"
 import './About.css'
 
+interface workingCards{
+  id: number;
+  image: string;
+  name: string;
+  founderName: string;
+  details: string;
+}
+
+interface founderCard{
+    id: number;
+    img: string;
+    alt: string;
+    name: string;
+    post: string;
+    desc: string;
+}
+
 const About:FC = () => {
+  const workingCards:workingCards[] = [
+    {
+      id: 1,
+      image: "https://www.freeiconspng.com/thumbs/computer-user-icon/computer-user-icon-28.png",
+      name: "Bhaarat Ranjan",
+      founderName: "Senior Engineer",
+      details: "Lead architect focused on building scalable, high-performance systems and innovative tech solutions.",
+    },
+    {
+      id: 2,
+      image: "https://www.freeiconspng.com/thumbs/computer-user-icon/computer-user-icon-28.png",
+      name: "Isha Rani Sahu",
+      founderName: "Full-stack Engineer",
+      details: "Creative developer bridging the gap between sophisticated design and robust full-stack logic.",
+    },
+    {
+      id: 3,
+      image: "https://www.freeiconspng.com/thumbs/computer-user-icon/computer-user-icon-28.png",
+      name: "Dharmesh Kumar",
+      founderName: "Junior Engineer",
+      details: "Logic-driven developer focused on component architecture and building seamless web experiences.",
+    },
+    {
+      id: 4,
+      image: "https://www.freeiconspng.com/thumbs/computer-user-icon/computer-user-icon-28.png",
+      name: "Divyanshu Pathak",
+      founderName: "Intern",
+      details: "professionalises in Frontend Development, with Better User Interface handeling.",
+    },
+    {
+      id: 5,
+      image: "https://www.freeiconspng.com/thumbs/computer-user-icon/computer-user-icon-28.png",
+      name: "Kumar Ayush",
+      founderName: "Intern",
+      details: "professionalises in Backend Development, Believes in Scalable Architecture.",
+    },
+  ];
+
+  const founderCard: founderCard = {
+    id: 1,
+    img: founderLogo,
+    alt: "Vinit Sir",
+    name: "Vinit Pratap Singh",
+    post: "Founder",
+    desc: "Handels a Company, Filled with absolute Creativity.",
+  }
   return (
     <div className="about">
       <h1>About</h1>
       <div className="intro">
         <div className="left">
-          <div className="userCard">
-            <img src={founderLogo} alt="Vinit Sir" />  
-            <p className="name">Vinit Pratap Singh</p>
-            <p className="post">Founder</p>
-            <p className="desc">Handels a Company, Filled with absolute Creativity. <i className="fas fa-chart-line"></i></p>
-          </div>          
+          <FounderCard props={founderCard}/>
         </div>
         <div className="right">
           <img src={MquvTech} alt="MQUV-TECH" />
@@ -29,51 +89,16 @@ const About:FC = () => {
         </div>
         <div className="main">
           <p>
-            MQUV Tech has always redefs what it means to build technology with purpose. Rooted in a passion for solving real-world problems through code, design, and strategy, the company was built on a simple belief: every business, regardless of size, deserves access to world-class software solutions.At the heart of MQUV Tech lies a vision to bridge the gap between complex technology and practical business needs. What began as a small team of developers with a shared ambition has grown into a full-fledged creative technology and digital transformation agency, serving startups, enterprises, and organizations across multiple industries. The journey has been driven by a relentless focus on quality, innovation, and client success — values that continue to shape every project undertaken.With a strong background in software engineering and a deep understanding of modern digital ecosystems, the leadership at MQUV Tech brings together technical expertise and creative vision. This combination allows the company to move beyond simply writing code — instead, crafting complete digital experiences that are functional, scalable, and visually compelling. From custom software development to mobile applications, websites, and automation systems, every solution is designed with the end user in mind, ensuring that technology serves people, not the other way around.What sets MQUV Tech apart is its commitment to building long-term partnerships rather than one-off projects. Understanding that every client's needs are unique, the approach at MQUV Tech emphasizes collaboration, transparency, and adaptability. Whether working with an early-stage startup looking to bring an idea to life or an established enterprise seeking to modernize its operations through automation, the goal remains the same: delivering solutions that create measurable impact.The philosophy driving MQUV Tech is centered on three core principles — innovation, precision, and reliability. Innovation ensures that the solutions built today are ready for the challenges of tomorrow. Precision reflects a meticulous attention to detail in both design and development, ensuring every product is polished and production-ready. Reliability speaks to the trust clients place in MQUV Tech, knowing that deadlines will be met and quality will never be compromised.Beyond technical skills, there is a genuine passion for mentorship and team growth. Building a company isn't just about delivering projects — it's about cultivating a culture where visionaries, designers, and engineers can thrive together. This collaborative spirit has become a defining trait of MQUV Tech's internal culture, fostering creativity and pushing the boundaries of what's possible in software development.Looking ahead, the mission is clear: to continue expanding MQUV Tech's reach, helping more businesses harness the power of technology to achieve their goals. With a foundation built on trust, expertise, and a genuine desire to create meaningful digital solutions, MQUV Tech is positioned not just as a service provider, but as a long-term technology partner for organizations navigating the ever-evolving digital landscape.
+            MQUV Tech has always redefs what it means to build technology with purpose. Rooted in a passion for solving real-world problems through code, design, and strategy, the company was built on a simple belief: every business, regardless of size, deserves access to world-class software solutions.At the heart of MQUV Tech lies a vision to bridge the gap between complex technology and practical business needs. What began as a small team of developers with a shared ambition has grown into a full-fledged creative technology and digital transformation agency, serving startups, enterprises, and organizations across multiple industries. The journey has been driven by a relentless focus on quality, innovation, and client success — values that continue to shape every project undertaken.With a strong background in software engineering and a deep understanding of modern digital ecosystems, the leadership at MQUV Tech brings together technical expertise and creative vision. This combination allows the company to move beyond simply writing code — instead, crafting complete digital experiences that are functional, scalable, and visually compelling. From custom software development to mobile applications, websites, and automation systems, every solution is designed with the end user in mind, ensuring that technology serves people, not the other way around.What sets MQUV Tech apart is its commitment to building long-term partnerships rather than one-off projects. Understanding that every client's needs are unique, the approach at MQUV Tech emphasizes collaboration, transparency, and adaptability. Whether working with an early-stage startup looking to bring an idea to life or an established enterprise seeking to modernize its operations through automation, the goal remains the same: delivering solutions that create measurable impact.The philosophy driving MQUV Tech is centered on three core principles — innovation, precision, and reliability. Innovation ensures that the solutions built today are ready for the challenges of tomorrow. Precision reflects a meticulous attention to detail in both design and development, ensuring every workingCard is polished and production-ready. Reliability speaks to the trust clients place in MQUV Tech, knowing that deadlines will be met and quality will never be compromised.Beyond technical skills, there is a genuine passion for mentorship and team growth. Building a company isn't just about delivering projects — it's about cultivating a culture where visionaries, designers, and engineers can thrive together. This collaborative spirit has become a defining trait of MQUV Tech's internal culture, fostering creativity and pushing the boundaries of what's possible in software development.Looking ahead, the mission is clear: to continue expanding MQUV Tech's reach, helping more businesses harness the power of technology to achieve their goals. With a foundation built on trust, expertise, and a genuine desire to create meaningful digital solutions, MQUV Tech is positioned not just as a service provider, but as a long-term technology partner for organizations navigating the ever-evolving digital landscape.
           </p>
         </div>
       </div>
       <div className="pallates">
         <h3>Meet Our Experts</h3>
         <div className="userCards">
-              <div className="workingCard">
-                <img src="https://www.freeiconspng.com/thumbs/computer-user-icon/computer-user-icon-28.png" alt="Comming Soon" />
-                <p className="name">Bhaarat Ranjan</p>
-                <p className="founderName">Senior Engineer</p>
-                <p className="details">Lead architect focused on building scalable, high-performance systems and innovative tech solutions.</p>
-                <button>Visit now <i className="fas fa-arrow-right"></i></button>
-              </div>
-              <div className="workingCard">
-                <img src="https://www.freeiconspng.com/thumbs/computer-user-icon/computer-user-icon-28.png" alt="Comming Soon" />
-                <p className="name">Isha Rani Sahu</p>
-                <p className="founderName">Full-stack Engineer</p>
-                <p className="details">Creative developer bridging the gap between sophisticated design and robust full-stack logic.</p>
-                <button>Visit now <i className="fas fa-arrow-right"></i></button>
-              </div>
-
-              <div className="workingCard">
-                <img src="https://www.freeiconspng.com/thumbs/computer-user-icon/computer-user-icon-28.png" alt="Comming Soon" />
-                <p className="name">Dharmesh Kumar</p>
-                <p className="founderName">Junior Engineer</p>
-                <p className="details">Logic-driven developer focused on component architecture and building seamless web experiences.</p>
-                <button>Visit now <i className="fas fa-arrow-right"></i></button>
-              </div>
-              <div className="workingCard">
-                <img src="https://www.freeiconspng.com/thumbs/computer-user-icon/computer-user-icon-28.png" alt="Comming Soon" />
-                <p className="name">Divyanshu Pathak</p>
-                <p className="founderName">Intern</p>
-                <p className="details">professionalises in Frontend Development, with Better User Interface handeling.</p>
-                <button>Visit now <i className="fas fa-arrow-right"></i></button>
-              </div>
-
-              <div className="workingCard">
-                <img src="https://www.freeiconspng.com/thumbs/computer-user-icon/computer-user-icon-28.png" alt="Comming Soon" />
-                <p className="name">Kumar Ayush</p>
-                <p className="founderName">Intern</p>
-                <p className="details">professionalises in Backend Development, Believes in Scalable Architecture.</p>
-                <button>Visit now <i className="fas fa-arrow-right"></i></button>
-              </div>
-
+          {workingCards.map(workingCard =>{
+            return <WorkingCard key={workingCard.id} props={workingCard} />
+          })}
         </div>
       </div>
       <div className="musical">
